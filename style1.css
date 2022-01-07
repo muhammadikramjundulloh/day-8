@@ -1,0 +1,181 @@
+* {
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-image: url('assets/bg.jpg');
+}
+nav {
+    background-color:rgb(186, 191, 189);
+    display: flex;
+    height: 10vh;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+nav .left {
+    /* background-color: brown; */
+    /* width: 50%; */
+    flex: 50%;
+    padding-left: 90px;
+    display: flex;
+
+    align-items: center;
+}
+nav .left img{
+    width: 50px;
+    height: 40px;
+}
+
+nav .left li {
+    display: inline;
+}
+
+nav .left ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+    
+}
+
+label{
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+label:hover{
+    color: orange;
+}
+form  input{
+    
+    border-radius: 6px; 
+    width: 100%;
+    border: 1px solid orange; 
+    padding: 10px;box-sizing: border-box;
+    margin: 10px 0px;
+}
+
+select textarea{
+    background-color: rgb(255, 255, 255);;
+}
+
+.skill {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    display: flex;
+}
+
+form{
+    margin: 100px auto; 
+    width: 350px;
+    height: auto;
+    font-style: 23px; 
+    font-weight: 600;
+    border-radius: 20px; 
+    box-shadow: rgb(163, 161, 161) 0px 0px 20px; 
+    padding: 20px;
+    background-color: rgb(243, 238, 231);
+    z-index: -9999;
+}
+
+nav .right {
+    /* background-color: blueviolet; */
+    /* width: 50%; */
+    flex: 50%;
+    display: flex;
+    padding: 10px;
+    justify-content: right;
+    align-items: center;
+    padding-right: 80px;
+}
+
+nav .right a {
+    background-color: orangered;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.container {
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .section {
+    /* background-color: brown; */
+    display: flex;
+    width: 85%;
+}
+
+.section .left {
+    /* background-color: aqua; */
+    flex: 30%;
+}
+
+.section .right {
+    /* background-color: blueviolet; */
+    flex: 70%;
+    padding-left: 35px;
+}
+
+.section .right p {
+    color: grey;
+}
+
+.section .right .skill-container {
+    display: flex;
+}
+
+.skill-container div {
+    /* width: 50%; */
+    flex: 1;
+}
+
+.skill-container div img {
+    width: 50px;
+    height: 50px;
+}
+.button{
+    font-size: 23px; 
+    background-color: rgb(247, 109, 59);
+    border-radius: 10px;
+    /* text-align: center;  */
+    color: papayawhip; 
+    margin: 10px; 
+    
+    padding-right: 5px; 
+    cursor: pointer; 
+}
+
+.button img{
+    size: 23px;
+}
+.button1:hover {
+background-color: #6b6968;
+color: white;
+}
+
+.left a:hover{
+    
+    color: rgb(241, 114, 64);
+    transition: 0.5s;
+}
+
+
+.right a{
+    border-radius: 6px;
+}
+
+@media  screen and(max-width:567px) {
+    form{
+        position: absolute;
+        left: 0px;
+    }
+    
+}

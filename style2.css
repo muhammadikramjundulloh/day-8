@@ -1,0 +1,171 @@
+* {
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-image: url('assets/');
+    overflow: hidden;
+}
+
+
+nav {
+    background-color:rgb(186, 191, 189);
+    display: flex;
+    height: 10vh;
+}
+
+nav .left {
+    /* background-color: brown; */
+    /* width: 50%; */
+    flex: 50%;
+    padding-left: 90px;
+    display: flex;
+
+    align-items: center;
+}
+
+
+nav .left li {
+    display: inline;
+}
+
+nav .left ul li a  {
+    text-decoration: none;
+    color:black;
+    padding: 12px;
+}
+nav ul li a.list-active {
+    color: #ec4d37;
+    font-weight: 700;
+}
+nav .right {
+    /* background-color: blueviolet; */
+    /* width: 50%; */
+    flex: 50%;
+    display: flex;
+    padding: 10px;
+    justify-content: right;
+    align-items: center;
+    padding-right: 80px;
+}
+
+nav .right a {
+    background-color: orangered;
+    color: rgb(223, 217, 217);
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.left a:hover{
+    
+    color: rgb(235, 94, 38);
+    transition: 0.3s;
+}
+
+.right a:hover{
+    background-color:  rgb(148, 3, 3);
+    color: rgb(245, 242, 239);
+    transition: 0.3s;
+    
+}
+h1 {
+    color: rgb(255, 68, 0);
+}
+
+h4{
+    color: rgb(255, 68, 0);
+}
+
+
+.container {
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .section {
+    /* background-color: brown; */
+    display: flex;
+    width: 85%;
+}
+
+.section .left {
+    /* background-color: aqua; */
+    flex: 30%;
+}
+
+.section .right {
+    /* background-color: blueviolet; */
+    flex: 70%;
+    padding-left: 35px;
+}
+
+.section .right p {
+    color: rgb(131, 131, 131);
+}
+
+.section .right .skill-container {
+    display: flex;
+}
+
+.skill-container div {
+    /* width: 50%; */
+    flex: 1;
+}
+
+.skill-container div img {
+    width: 50px;
+    height: 50px;
+}
+
+.sosial img{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+
+@media screen and (max-width: 567px) {
+    .container{
+        width: 500px;
+        margin-top: 60px;
+        margin-left: 0px;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .container .section {
+        /* background-color: brown; */
+        flex-direction: column;
+        width: 80%;
+        margin-top: 0px;
+        align-items: flex-start;
+    }
+
+    
+    nav .left {
+        text-decoration: none;
+        color: black;
+        padding: 0px;
+        margin-left: 5;
+    }
+    nav .left  ul li a {
+        display: inline;
+
+    }
+    nav .right{
+        padding-right:6;
+    }
+
+    .sosial img{
+        margin:0 5px;
+    }
+    body{
+        overflow: auto;
+    }
+    
+    
+}
