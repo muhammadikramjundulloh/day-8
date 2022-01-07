@@ -162,6 +162,8 @@ h4{
 
     .sosial img{
         margin:0 5px;
+        width: 30;
+        height: 30;
     }
     body{
         overflow: auto;
