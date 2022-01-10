@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background-image: url('assets/bg.jpg');
+    background-color: rgb(241, 233, 233);
 }
 nav {
     background-color:rgb(186, 191, 189);
@@ -142,14 +142,14 @@ nav .right a {
     height: 50px;
 }
 .button{
-    font-size: 23px; 
+    font-size: 20px; 
     background-color: rgb(247, 109, 59);
     border-radius: 10px;
     /* text-align: center;  */
     color: papayawhip; 
     margin: 10px; 
     
-    padding-right: 5px; 
+    padding: 5px 7px; 
     cursor: pointer; 
 }
 

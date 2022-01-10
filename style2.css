@@ -5,8 +5,14 @@
 
 body {
     margin: 0;
-    background-image: url('assets/');
+    background-color: rgb(224, 226, 228);
     overflow: hidden;
+}
+
+.skill{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
 }
 
 

@@ -52,7 +52,7 @@ function renderBlog(){
               >
             </h1>
             <div class="detail-blog-content">
-              ${getFullTime(new Date())} | ${blogs[i].author}
+              ${getFullTime(blogs[i].postAt)} | ${blogs[i].author}
             </div>
             <p>
               ${blogs[i].content}
@@ -98,8 +98,8 @@ function getFullTime(time) {
   let hours = time.getHours()
   let minute = time.getMinutes()
 
-  return fullTime = `${date} ${month[monthIndex]} ${year} ${hours}:${minute} WIB`
-
+  return `${date} ${month[monthIndex]} ${year} ${hours}:${minute} WIB`
+  
 }
 
 function getDistanceTime(time) {
@@ -114,7 +114,7 @@ function getDistanceTime(time) {
   let secondInHours =3600
   let hoursInDay = 23 
 
-  let minutes =60
+  let minutes =60 
   let seconds = 60
 
   let distanceDay = Math.floor(distance/(miliSecond*secondInHours*hoursInDay))
